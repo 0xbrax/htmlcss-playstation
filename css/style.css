@@ -12,6 +12,7 @@ body {
     --_sec_color: #1f1f1f;
     --_alt_color_gray: #bebcbb;
     --_alt_color_blue: #161c3b;
+    --_alt_color_lightblue: #00439c;
 }
 
 /* HEADER */
@@ -120,10 +121,40 @@ body {
 
 /* CONTACT */
 
+/* FOOTER */
 
+footer {
+    background-color: var(--_alt_color_lightblue);
+}
 
+#_language_select img {
+    height: 1rem;
+}
 
+footer ul {
+    list-style: none;
+}
 
+footer ul a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul a:hover {
+    color: #FFFFFF;
+}
+
+footer .row:last-child img {
+    height: 40px;
+}
+
+footer .row:last-child p a {
+    color: #FFFFFF;
+}
+
+footer .row:last-child p a:hover {
+    color: #FFFFFF;
+}
 
 /*************************************
     DEBUG CLASS FOR BODY LAYOUT
