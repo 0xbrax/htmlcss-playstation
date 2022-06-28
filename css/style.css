@@ -10,7 +10,8 @@ body {
 
 :root {
     --_sec_color: #1f1f1f;
-    --_alt_color: #bebcbb;
+    --_alt_color_gray: #bebcbb;
+    --_alt_color_blue: #161c3b;
 }
 
 /* HEADER */
@@ -85,7 +86,7 @@ body {
 
 #_vip {
     height: 300px;
-    background-color: var(--_alt_color);
+    background-color: var(--_alt_color_gray);
 }
 
 #_vip .container-xxl,
@@ -96,6 +97,31 @@ body {
 #_vip img {
     max-width: 300px;
 }
+
+/* STORE */
+
+/* INFO */
+
+#_info {
+    background-color: var(--_alt_color_blue);
+}
+
+#_info .row > div:first-child img {
+    height: 70px;
+}
+
+#_info .row > div:last-child img {
+    height: 300px;
+}
+
+#_info .row > div:last-child {
+    display: none;
+}
+
+/* CONTACT */
+
+
+
 
 
 
