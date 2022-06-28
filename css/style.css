@@ -48,7 +48,28 @@ body {
 }
 
 
+/* TECH SPECS */
 
+._width_80 {
+    width: 80%;
+}
+
+/* PROMO */
+
+#_promo {
+    height: 400px;
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+    background-position: center top;
+}
+
+#_promo .container-xxl,
+#_promo .row {
+    height: 100%;
+}
+
+#_promo img {
+    max-width: 200px;
+}
 
 
 
