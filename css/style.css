@@ -8,6 +8,11 @@ body {
     font-family: sans-serif;
 }
 
+:root {
+    --_sec_color: #1f1f1f;
+    --_alt_color: #bebcbb;
+}
+
 /* HEADER */
 
 ._mcdonalds {
@@ -47,7 +52,6 @@ body {
     max-width: 400px;
 }
 
-
 /* TECH SPECS */
 
 ._width_80 {
@@ -69,6 +73,28 @@ body {
 
 #_promo img {
     max-width: 200px;
+}
+
+/* CARDS */
+
+#_cards {
+    background-color: var(--_sec_color);
+}
+
+/* VIP PLAN */
+
+#_vip {
+    height: 300px;
+    background-color: var(--_alt_color);
+}
+
+#_vip .container-xxl,
+#_vip .row {
+    height: 100%;
+}
+
+#_vip img {
+    max-width: 300px;
 }
 
 
@@ -115,4 +141,17 @@ body {
     height: 200px;
     background-color: pink;
     border: 5px solid black;
+}
+
+/*************************************
+    MEDIA QUERY
+*************************************/
+
+@media all and (min-width: 768px) {
+    #_vip {
+    background-image: url('../img/ps-plus-april-monthly-games-featured-image-block.png');
+    background-position: 90% top;
+    background-size: auto 300px;
+    background-repeat: no-repeat;
+    }
 }
