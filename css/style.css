@@ -119,6 +119,67 @@ body {
     display: none;
 }
 
+/* SPECIAL */
+
+#_special {
+    position: relative;
+    height: 250px;
+}
+
+#_spec_btn {
+	position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+	overflow: hidden;
+	margin: 0 auto;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%/50px;
+	background-color: #BB0000;
+}
+
+#_spec_btn > div {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 250px;
+	height: 200px;
+	border-radius: 50%/50px;
+	background-color: red;
+    color: #FFF;
+    text-align: center;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+._xbox {
+    width: 100px;
+    position: absolute;
+    bottom: 70%;
+    opacity: 0;
+}
+
+#_xbox_1 {
+    left: 10%;
+}
+
+#_xbox_2 {
+    left: 30%;
+}
+
+#_xbox_3 {
+    right: 30%;
+}
+
+#_xbox_4 {
+    right: 10%;
+}
+
 /* CONTACT */
 
 /* FOOTER */
@@ -140,10 +201,6 @@ footer ul a {
     text-decoration: none;
 }
 
-footer ul a:hover {
-    color: #FFFFFF;
-}
-
 footer .row:last-child img {
     height: 40px;
 }
@@ -152,9 +209,88 @@ footer .row:last-child p a {
     color: #FFFFFF;
 }
 
+/*************************************
+    EFFECT
+*************************************/
+
+footer ul a:hover {
+    color: #FFFFFF;
+}
+
 footer .row:last-child p a:hover {
     color: #FFFFFF;
 }
+
+#_spec_btn:hover {
+    cursor: pointer;
+}
+
+#_spec_btn:active {
+    height: 200px;
+}
+
+header,
+section,
+footer {
+    animation: collapse 3s cubic-bezier(0.55, -0.04, 0.91, 0.94) forwards;
+    animation-play-state: paused;
+}
+
+@keyframes collapse {
+    100% {
+        opacity: 0;
+        transform: scale(0) translateY(600px) rotateZ(90deg);
+        height: 0;
+        width: 0;
+    }
+}
+
+#_special {
+    animation: position 3s linear forwards;
+    animation-play-state: paused;
+}
+
+@keyframes position {
+    100% {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+._xbox {
+    animation: xbox 1s ease-in 3s forwards, bounce 5s linear 4s forwards;
+    animation-play-state: paused;
+}
+
+@keyframes xbox {
+    1% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+
+@keyframes bounce {
+    0%, 25%, 50%, 75%, 100% {
+        transform: translateY(0);
+    } 
+    10% {
+        transform: translateY(-150px);
+    } 
+    35% {
+        transform: translateY(-110px);
+    }
+    60% {
+        transform: translateY(-60px);
+    }
+    85% {
+        transform: translateY(-20px);
+    } 
+ } 
 
 /*************************************
     DEBUG CLASS FOR BODY LAYOUT
