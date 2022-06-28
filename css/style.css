@@ -8,6 +8,50 @@ body {
     font-family: sans-serif;
 }
 
+/* HEADER */
+
+._mcdonalds {
+    background-image: url('../img/doodle-burger-1-cut.png');
+}
+
+._header_top img {
+    height: 20px;
+}
+
+._header_bottom .navbar-brand img {
+    height: 50px;
+}
+
+._search_icon {
+    height: 40px;
+}
+
+/* JUMBOTRON */
+
+#_jumbotron {
+    margin-top: 112px;
+}
+
+._hero {
+    height: 400px;
+    background-image: url('../img/jumbo-bg.png');
+    background-position: center top;
+}
+
+._hero .container-xxl,
+._hero .row {
+    height: 100%;
+}
+
+._hero img {
+    max-width: 400px;
+}
+
+
+
+
+
+
 /*************************************
     DEBUG CLASS FOR BODY LAYOUT
 *************************************/
