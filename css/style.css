@@ -18,17 +18,10 @@ body {
 
 /* HEADER */
 
-header {
-    height: 50%;
-    overflow-y: scroll;
+#accordionExample {
+    max-height: 420px;
+    overflow-y: auto;
 }
-
-
-
-
-
-
-
 
 ._mcdonalds {
     background-image: url('../img/doodle-burger-1-cut.png');
@@ -60,7 +53,7 @@ header {
     list-style: none;
 }
 
-.accordion-body:not(:last-child) ul:first-child::after {
+._line_break::after {
     content: '';
     display: block;
     height: 1px;
@@ -90,6 +83,10 @@ header {
 }
 
 /* TECH SPECS */
+
+._fx_specs_card {
+    opacity: 0.8;
+}
 
 /* PROMO */
 
@@ -274,12 +271,29 @@ footer .row:last-child p a:hover {
     outline-offset: 2px;
 }
 
+._fx_hero_card {
+    transition: transform 0.2s ease-out 0.2s;
+}
 
+._fx_hero_card:hover {
+    transform: translateY(-10px);
+}
 
+._fx_hero_card:active {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+}
 
+._fx_specs_card {
+    transition: all 0.2s ease-out 0.2s;
+}
 
+._fx_specs_card:hover {
+    box-shadow: 0px 34px 0px -30px var(--bs-primary);
+    opacity: 1;
+}
 
-
+/* SPECIAL */
 
 #_spec_btn:hover {
     cursor: pointer;
