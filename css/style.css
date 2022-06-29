@@ -18,6 +18,18 @@ body {
 
 /* HEADER */
 
+header {
+    height: 50%;
+    overflow-y: scroll;
+}
+
+
+
+
+
+
+
+
 ._mcdonalds {
     background-image: url('../img/doodle-burger-1-cut.png');
 }
@@ -44,11 +56,17 @@ body {
     border-bottom-left-radius: 0;
 }
 
+.accordion-body ul {
+    list-style: none;
+}
 
-
-
-
-
+.accordion-body:not(:last-child) ul:first-child::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--bs-secondary);
+}
 
 /* JUMBOTRON */
 
@@ -73,10 +91,6 @@ body {
 
 /* TECH SPECS */
 
-._width_80 {
-    width: 80%;
-}
-
 /* PROMO */
 
 #_promo {
@@ -99,6 +113,8 @@ body {
 #_cards {
     background-color: var(--_sec_color);
 }
+
+/* EXPLORE */
 
 /* VIP PLAN */
 
@@ -238,6 +254,33 @@ footer .row:last-child p a:hover {
     color: #FFFFFF;
 }
 
+._fx_btn_black:hover {
+    outline: 2px solid var(--bs-black);
+    outline-offset: 2px;
+}
+
+._fx_btn_red:hover {
+    outline: 2px solid var(--bs-danger);
+    outline-offset: 2px;
+}
+
+._fx_btn_blue:hover {
+    outline: 2px solid var(--bs-primary);
+    outline-offset: 2px;
+}
+
+._fx_btn_white:hover {
+    outline: 2px solid var(--bs-light);
+    outline-offset: 2px;
+}
+
+
+
+
+
+
+
+
 #_spec_btn:hover {
     cursor: pointer;
 }
@@ -307,7 +350,7 @@ footer {
     85% {
         transform: translateY(-20px);
     } 
- } 
+} 
 
 /*************************************
     DEBUG CLASS FOR BODY LAYOUT
@@ -358,10 +401,23 @@ footer {
 *************************************/
 
 @media all and (min-width: 768px) {
+    #_explore .row p {
+        min-height: 48px;
+    }
     #_vip {
     background-image: url('../img/ps-plus-april-monthly-games-featured-image-block.png');
     background-position: 90% top;
     background-size: auto 300px;
     background-repeat: no-repeat;
+    }
+}
+
+@media all and (min-width: 992px) {
+    
+    .accordion-body {
+        position: absolute;
+        left: 50% ;
+        transform: translateX(-50%);
+        width: 100vw;
     }
 }
