@@ -13,6 +13,7 @@ body {
     --_alt_color_gray: #bebcbb;
     --_alt_color_blue: #161c3b;
     --_alt_color_lightblue: #00439c;
+    --bs-accordion-border-width: 0 !important;
 }
 
 /* HEADER */
@@ -32,6 +33,22 @@ body {
 ._search_icon {
     height: 40px;
 }
+
+._border_edit {
+    border: 0;
+    box-shadow: 0;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+
+
+
+
 
 /* JUMBOTRON */
 
